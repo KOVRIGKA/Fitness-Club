@@ -1,0 +1,136 @@
+.breadcrumbs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+    margin-bottom: 30px;
+}
+
+.container__services{
+    width: 880px;
+    margin: 0 auto;
+}
+
+.title__services{
+    color: #221f1f;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 49px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.services__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services__item{
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+.service__avatar{
+    width: 250px;
+    height: 155px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.service__content-name{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.service__content-text{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    display: block;
+    line-height: 21px;
+}
+
+.service__avatar::after{
+    content: '';
+    top: 0;
+    left: 0;
+    height: 155px;
+    width: 250px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.service__avatar:hover::after{
+    background-color: transparent;
+}
+
+.service__avatar-name{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.partners{
+    width: 270px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
+    margin-bottom: 30px;
+}
+
+.title__partners{
+    color: #221f1f;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.partners__list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.partners__item{
+    text-align: center;
+}
+
+.partner{
+    margin: 25px auto;
+}
+
+.partner__img{
+    filter: opacity(0.7) grayscale(1);
+    transition: 0.5s;
+}
+
+.partner__img:hover{
+    filter: none;
+}
+
+.partner__link{
+    display: block;
+}

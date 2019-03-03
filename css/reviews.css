@@ -1,0 +1,267 @@
+.title__reviews{
+    color: #221f1f;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 49px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.breadcrumbs__reviews{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 42px;
+    margin-bottom: 30px;
+
+}
+
+.breadcrumbs__list{
+    display: flex;
+    flex-direction: row;
+}
+
+/* .breadcrumbs__item{
+    display: flex;
+    margin-right: 5px;
+    margin-left: 5px;
+} */
+
+.breadcrumbs__item::after{
+    content: "/";
+    color: #221f1f;
+}
+
+.breadcrumbs__item:last-child::after{
+    display: none;
+}
+
+.breadcrumbs__link--main{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    font-style: italic;
+    color: #f9aa42;
+    text-decoration: underline;
+}
+
+.breadcrumbs__link--reviews{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    color: #221f1f;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.reviews__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.review{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.review__data{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 7px;
+    color: gray;
+}
+
+.review__title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #221f1f;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.review__desc{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: black;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.review{
+    display: flex;
+    justify-content: space-between;
+}
+
+.review__img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.review__content{
+    margin-left: 20px;
+}
+
+.pattern__section{
+    margin-bottom: 30px;
+}
+
+.pattern{
+    background-image: url("../img/decor/pattern.jpg");
+}
+
+.pattern__content{
+    width: 275px;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    line-height: 30px;
+    padding: 25px 25px;
+    text-align: center;
+}
+
+.pattern__content-text{
+    font-weight: bold;
+    color: #f89513;
+}
+
+.feedback{
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 60px;
+}
+
+.feedback__content{
+    background-color: #f5f5f5;
+    padding: 40px 70px 50px 70px;
+}
+
+.title__comment{
+    color: #221f1f;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 49px;
+    letter-spacing: 1.3px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.form__row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form__col{
+    width: 270px;
+}
+
+.form__input{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 15px 10px;
+    border: transparent;
+    box-sizing: border-box;
+}
+
+.form__label{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__textarea{
+    width: 100%;
+}
+
+
+.form__radios{
+    display: flex;
+}
+
+.form__radio{
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+}
+
+.form__radio-elem{
+    position: absolute;
+    left: -9999px;
+}
+
+.form__radio-fake{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #d1d1d1;
+    margin-right: 5px;
+    position: relative;
+}
+
+.form__radio-fake::after{
+    content: '';
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #f89b21;
+    position: absolute;
+}
+
+.form__radio-elem:checked + .form__radio-fake{
+    border-color: #f89b21
+}
+
+.form__radio-elem:checked + .form__radio-fake::after{
+    width: 8px;
+    height: 8px;
+}
+
+.form__radio-elem:checked + .form__radio-fake + .form__radio-title{
+    color: #f89b21;
+}
+
+.form__radio-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.form__button{
+    padding: 20px;
+    border-radius: 3px;
+    border: none;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #1c1f1d;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.form__col--right{
+    text-align: right;
+}
+
+.form__button:hover{
+    background: #f89b21;
+}
